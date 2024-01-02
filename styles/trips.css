@@ -1,0 +1,29 @@
+.carousel-fixed {
+  position: fixed;
+  top: 10px;
+  height: 55vh;
+  width: 50vw;
+  left: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.carousel-fixed .carousel-inner .carousel-item img {
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .carousel-fixed {
+    height: auto;
+    position: static;
+    width: auto;
+    border-radius: 0;
+  }
+}
+
+.content-section {
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 100vh;
+}

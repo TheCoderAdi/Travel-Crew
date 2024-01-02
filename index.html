@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Travel Crew</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./scripts/home.js"></script>
+  </head>
+  <body class="position-relative">
+    <div class="position-fixed scroll-to-top">
+      <span class="scroll-to-top-btn">&#10514;</span>
+    </div>
+    <nav class="navbar navbar-expand-lg px-5">
+      <a class="navbar-brand text-light fs-2 fw-bolder" href="index.html"
+        >Travel Crew</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto d-flex gap-5 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bolder" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bolder" href="about.html"
+              >About us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bolder" href="explore.html"
+              >Explore</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bolder" href="map.html">Map</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="btn btn-light fw-bolder p-3"
+              style="color: #029d9d"
+              href="trips.html"
+              >Booking now</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container off-content mb-5">
+      <div class="container off-content p-5 position-relative layer-1">
+        <img
+          src="./images/shape-2.png"
+          class="shapes position-absolute img-fluid rounding-effect"
+          style="left: 45%; top: 70%"
+        />
+        <img
+          src="./images/shape-1.png"
+          class="shapes position-absolute img-fluid end-50 rounding-effect"
+          style="top: 5%"
+        />
+        <img
+          src="./images/shape-3.png"
+          class="shapes position-absolute img-fluid top-50 rounding-effect"
+          style="right: 0px"
+        />
+        <div class="row first-container">
+          <div
+            class="col-md-6 d-flex justify-content-center flex-column position-relative"
+          >
+            <h1 class="fs-1 cbc">Explore Your Travel</h1>
+            <p class="display-2 af">Trusted Travel Agency</p>
+            <p class="fs-5 text-secondary text-right">
+              I travel not to go anywhere, but to go. I travel for travel's sake
+              the great affair is to move.
+            </p>
+            <div class="d-flex flex-row gap-3">
+              <a
+                class="btn btn-light hover text-light p-3 fw-bolder"
+                style="background-color: #029d9d"
+                href="trips.html"
+                >Booking now</a
+              >
+              <a
+                class="btn btn-light p-3 fw-bolder border text-dark"
+                href="trips.html"
+                >Learn more</a
+              >
+            </div>
+          </div>
+          <figure class="col-md-6">
+            <img
+              src="./images/hero-banner.png"
+              alt="home"
+              class="w-100 img-fluid"
+            />
+          </figure>
+        </div>
+      </div>
+      <div class="container off-content mb-3">
+        <h1 class="text-center fs-1 cbc">Destinations</h1>
+        <h5 class="text-center display-4 af">Choose Your Place</h5>
+        <div class="row mt-5 container-2">
+          <div class="col-md-6 d-flex justify-content-center">
+            <div class="position-relative img-hover">
+              <img
+                src="./images/destination-1.jpg"
+                alt="Destinations"
+                class="img-anim row-2-images"
+              />
+              <p class="position-absolute letters_cbc cbc">Mali</p>
+              <p class="position-absolute letters_af af">Maldives</p>
+              <div class="position-absolute black-shades"></div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center">
+            <div class="position-relative img-hover">
+              <img
+                src="./images/destination-2.jpg"
+                alt="destination-2"
+                class="img-anim row-2-images"
+              />
+              <p class="position-absolute letters_cbc cbc">Bangkok</p>
+              <p class="position-absolute letters_af af">Thailand</p>
+              <div class="position-absolute black-shades"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4 px-5 container-2">
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="position-relative img-hover" style="height: 20vh">
+              <img
+                src="./images/destination-3.jpg"
+                alt="destination-3"
+                class="img-anim"
+                style="height: 20vh; width: 100%"
+              />
+              <p class="position-absolute letters_cbc cbc" style="bottom: 20%">
+                Kuala Rumpun
+              </p>
+              <p class="position-absolute letters_af af">Malaysia</p>
+              <div class="position-absolute black-shades"></div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="position-relative img-hover" style="height: 20vh">
+              <img
+                src="./images/destination-4.jpg"
+                alt="destination-4"
+                class="img-anim"
+                style="height: 20vh; width: 100%"
+              />
+              <p class="position-absolute letters_cbc cbc" style="bottom: 20%">
+                Kathmandu
+              </p>
+              <p class="position-absolute letters_af af">Nepal</p>
+              <div class="position-absolute black-shades"></div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="position-relative img-hover" style="height: 20vh">
+              <img
+                src="./images/destination-5.jpg"
+                alt="destination-5"
+                class="img-anim"
+                style="height: 20vh; width: 100%"
+              />
+              <p class="position-absolute letters_cbc cbc" style="bottom: 20%">
+                Jakarta
+              </p>
+              <p class="position-absolute letters_af af">Indonesia</p>
+              <div class="position-absolute black-shades"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container off-content container-2 pt-5 px-5 mb-5">
+        <h1 class="text-center fs-1 cbc">Featured Tours</h1>
+        <h5 class="text-center display-4 af mb-5">Most Popular Tours</h5>
+        <div class="row container-2">
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card shadow" style="width: 22rem">
+              <img
+                src="./images/destination-1.jpg"
+                class="card-img-top"
+                alt="popular-1"
+              />
+              <div class="position-absolute card-time">
+                <span class="material-icons ionicon"> schedule </span>
+                <p class="af text-light">10 Days</p>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Mali , Maldives</h5>
+                <p
+                  class="card-text fw-bolder card-text-hover"
+                  style="color: hsl(0, 0%, 40%)"
+                >
+                  A good traveler has no fixed plans and is not intent on
+                  arriving.
+                </p>
+
+                <a
+                  href="mali.html"
+                  class="btn text-light fw-bolder"
+                  style="background-color: #029d9d"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card shadow position-relative" style="width: 22rem">
+              <img
+                src="./images/destination-2.jpg"
+                class="card-img-top"
+                alt="popular-2"
+              />
+              <div class="position-absolute card-time">
+                <span class="material-icons ionicon"> schedule </span>
+                <p class="af text-light">12 Days</p>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Bangkok , Thailand</h5>
+                <p
+                  class="card-text fw-bolder card-text-hover"
+                  style="color: hsl(0, 0%, 40%)"
+                >
+                  A good traveler has no fixed plans and is not intent on
+                  arriving.
+                </p>
+
+                <a
+                  href="thailand.html"
+                  style="background-color: #029d9d"
+                  class="btn text-light fw-bolder"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card shadow" style="width: 22rem">
+              <img
+                src="./images/destination-1.jpg"
+                class="card-img-top"
+                alt="popular-3"
+              />
+              <div class="position-absolute card-time">
+                <span class="material-icons ionicon"> schedule </span>
+                <p class="af text-light">14 Days</p>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Kathmandu , Nepal</h5>
+                <p
+                  class="card-text fw-bolder card-text-hover"
+                  style="color: hsl(0, 0%, 40%)"
+                >
+                  A good traveler has no fixed plans and is not intent on
+                  arriving.
+                </p>
+
+                <a
+                  href="kathmandu.html"
+                  style="background-color: #029d9d"
+                  class="btn text-light fw-bolder"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container off-content pt-5 mb-5">
+        <div class="row">
+          <div class="col-md-6 get-about">
+            <h1 class="fs-1 ps-5 remove-ps cbc">About Us</h1>
+            <h5 class="ps-5 remove-ps display-4 af">
+              Explore all tour of the world with us.
+            </h5>
+            <p
+              class="ps-5 remove-ps text-secondary"
+              style="font-weight: lighter; font-size: 1.2rem"
+            >
+              Lorem Ipsum available, but the majority have suffered alteration
+              in some form, by injected humour, or randomised words which don't
+              look even slightly believable.
+            </p>
+            <div class="row gap pt-3 ps-5 remove-ps">
+              <div class="col-md-2 md-2-class get-about">
+                <div
+                  class="rounded-circle"
+                  style="
+                    background: hsl(180, 98%, 31%);
+                    height: 70px;
+                    width: 70px;
+                    display: grid;
+                    place-items: center;
+                  "
+                >
+                  <span
+                    class="material-icons"
+                    style="font-size: 2.5rem; color: whitesmoke"
+                  >
+                    explore
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <h2 class="text-secondary fw-bolder align-self-start">
+                  Tour Guide
+                </h2>
+                <p class="text-secondary">
+                  Lorem Ipsum available, but the majority have suffered
+                  alteration in some.
+                </p>
+              </div>
+            </div>
+            <div class="row gap pt-3 ps-5 remove-ps">
+              <div class="col-md-2 md-2-class get-about">
+                <div
+                  class="rounded-circle"
+                  style="
+                    background: hsl(180, 98%, 31%);
+                    height: 70px;
+                    width: 70px;
+                    display: grid;
+                    place-items: center;
+                  "
+                >
+                  <span
+                    class="material-icons"
+                    style="font-size: 2.5rem; color: whitesmoke"
+                  >
+                    work
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <h2 class="text-secondary fw-bolder align-self-start">
+                  Friendly price
+                </h2>
+                <p class="text-secondary">
+                  Lorem Ipsum available, but the majority have suffered
+                  alteration in some.
+                </p>
+              </div>
+            </div>
+            <div class="row gap pt-3 ps-5 remove-ps">
+              <div class="col-md-2 md-2-class get-about">
+                <div
+                  class="rounded-circle"
+                  style="
+                    background: hsl(180, 98%, 31%);
+                    height: 70px;
+                    width: 70px;
+                    display: grid;
+                    place-items: center;
+                  "
+                >
+                  <span
+                    class="material-icons"
+                    style="
+                      font-size: 2.5rem;
+                      color: whitesmoke;
+                      transform: rotate(180deg);
+                    "
+                  >
+                    umbrella
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <h2 class="text-secondary fw-bolder align-self-start">
+                  Reliable tour
+                </h2>
+                <p class="text-secondary">
+                  Lorem Ipsum available, but the majority have suffered
+                  alteration in some.
+                </p>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn ms-5 mt-4 mb-3 text-light fw-bolder p-3 about-btn"
+              style="background-color: #029d9d"
+            >
+              Booking Now
+            </button>
+          </div>
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="./images/about-banner.png"
+              alt="about"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container off-content pt-5">
+        <h1 class="fs-1 text-center cbc">From The Blog Post</h1>
+        <h5 class="display-4 af text-center">Latest News & Articles</h5>
+        <div class="row pt-5 gap">
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card shadow" style="width: 22rem">
+              <img
+                src="./images/popular-1.jpg"
+                class="card-img-top"
+                alt="popular-1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Admin</h5>
+                <p class="card-text fw-bolder card-text-hover">
+                  A good traveler has no fixed plans and is not intent on
+                  arriving.
+                </p>
+                <a
+                  href="#"
+                  class="fs-6 fw-bolder"
+                  style="
+                    color: hsl(180, 98%, 31%);
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                    gap: 5px;
+                  "
+                  >Read More
+                  <span style="font-size: 1.5rem; font-weight: bolder">
+                    &#8594;
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card shadow position-relative" style="width: 22rem">
+              <img
+                src="./images/popular-2.jpg"
+                class="card-img-top"
+                alt="popular-2"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Admin</h5>
+                <p class="card-text fw-bolder card-text-hover">
+                  A good traveler has no fixed plans and is not intent on
+                  arriving.
+                </p>
+                <a
+                  href="#"
+                  class="fs-6 fw-bolder"
+                  style="
+                    color: hsl(180, 98%, 31%);
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                    gap: 5px;
+                  "
+                  >Read More
+                  <span style="font-size: 1.5rem; font-weight: bolder">
+                    &#8594;
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card shadow" style="width: 22rem">
+              <img
+                src="./images/popular-3.jpg"
+                class="card-img-top"
+                alt="popular-3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Admin</h5>
+                <p class="card-text fw-bolder">
+                  A good traveler has no fixed plans and is not intent on
+                  arriving.
+                </p>
+                <a
+                  href="#"
+                  class="fs-6 fw-bolder"
+                  style="
+                    color: hsl(180, 98%, 31%);
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                    gap: 5px;
+                  "
+                  >Read More
+                  <span style="font-size: 1.5rem; font-weight: bolder">
+                    &#8594;
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="text-center text-lg-start text-light p-4"
+      style="
+        background-image: url('./images/footer-bg.png');
+        background-repeat: no-repeat;
+        background-color: hsl(222, 46%, 17%);
+      "
+    >
+      <section>
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Travel Crew
+              </h6>
+              <p>
+                Here you can use rows and columns to organize your footer
+                content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit.
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Categories</h6>
+              <p>
+                <a href="#!" class="text-reset">Travel</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Lifestyle</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Fashion</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Education</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Quick links</h6>
+              <p>
+                <a href="#!" class="text-reset">About</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Contact</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Tours</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Booking</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> Bhubaneswar</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                travelcrew@gmail.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 91 9237 240 625</p>
+              <p><i class="fas fa-print me-3"></i> + 91 9237 366 657</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2024 Copyright:
+        <a class="text-reset fw-bold" href="home.html">Travel Crew</a>
+      </div>
+    </footer>
+  </body>
+</html>

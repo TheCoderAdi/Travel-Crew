@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+html,
+body {
+  font-family: "Heebo", sans-serif !important;
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+}
+nav,
+header {
+  background-color: #029d9d !important;
+}
