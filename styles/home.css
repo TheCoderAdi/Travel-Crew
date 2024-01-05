@@ -5,6 +5,27 @@ li {
   list-style: none;
 }
 
+.plane {
+  height: 268px;
+  width: 260px;
+  left: 47%;
+  top: -6%;
+  transform: rotateZ(5deg);
+}
+@keyframes udanta-plane {
+  0% {
+    top: -10%;
+  }
+ 50%{
+  top: -20%;
+    left: -20%;
+ }
+ 100% {
+  top: -100%;
+    left: -100%;
+ }
+  
+}
 .scroll-to-top {
   height: 50px;
   width: 50px;
