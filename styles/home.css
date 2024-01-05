@@ -4,7 +4,9 @@ li {
   text-decoration: none;
   list-style: none;
 }
-
+.navbar-brand{
+  transition: all 0.5s ease;
+}
 .plane {
   height: 268px;
   width: 260px;
