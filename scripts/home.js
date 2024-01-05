@@ -35,6 +35,16 @@ function checkHeight() {
 }
 
 $(document).ready(function () {
+   $(".navbar-brand").hide()
+  $(".plane").css("animation","udanta-plane 3s linear")
+
+  setTimeout(()=>{
+    $(".navbar-brand").show();
+  },1600)
+  setTimeout(()=>{
+    $(".plane").hide()
+  },1800)
+ 
   adjustLayout();
   checkHeight();
   $(window).resize(function () {
