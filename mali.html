@@ -45,14 +45,15 @@
         ];
         days.forEach((day, index) => {
           $(".card-section").append(
-            ` <div key=${index} style="background-color:#fcfbfc" class="card shadow text-dark">
+            ` <div key=${index} class="card shadow custom-background text-dark">
                   <div class="card-body">
                  <h5 class="card-title af">Day ${day.day}</h5>
                  <p class="card-text">
                     ${day.itinerary}
                  </p>
                   </div>
-                </div>`
+                </div>
+                `
           );
         });
         $("#carouselExampleControls").on("slide.bs.carousel", function (event) {
@@ -148,10 +149,7 @@
             </button>
           </div>
         </div>
-        <div
-          style="z-index: 999; background-color: #fff1e6"
-          class="col-md-6 content-section"
-        >
+        <div style="z-index: 999" class="col-md-6 content-section">
           <h2 class="cbc" style="font-size: 4rem">
             Maldives Destination Package
           </h2>
@@ -170,6 +168,11 @@
             class="card-section"
             style="display: flex; gap: 10px; flex-direction: column"
           ></div>
+          <div class="text-center mt-4 custom-background">
+            <a href="booking.html" class="text-dark fw-bolder fs-3 w-100"
+              >Book Now</a
+            >
+          </div>
         </div>
       </div>
     </div>

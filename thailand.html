@@ -45,7 +45,7 @@
         ];
         days.forEach((day, index) => {
           $(".card-section").append(
-            ` <div key=${index} style="background-color:#fcfbfc" class="card shadow text-dark">
+            ` <div key=${index} class="card custom-background shadow text-dark">
                 <div class="card-body">
                <h5 class="card-title af">Day ${day.day}</h5>
                <p class="card-text">
@@ -148,10 +148,7 @@
             </button>
           </div>
         </div>
-        <div
-          style="z-index: 999; background-color: #fff1e6"
-          class="col-md-6 content-section"
-        >
+        <div style="z-index: 999" class="col-md-6 content-section">
           <h2 class="cbc" style="font-size: 4rem">
             Thailand Destination Package
           </h2>
