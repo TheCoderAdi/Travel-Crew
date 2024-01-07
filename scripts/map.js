@@ -1,6 +1,35 @@
+function adjustLayout() {
+  var width = $(window).width();
+  if (width <= 900) {
+    $(".navbar-brand").html("Travel Crew");
+  } else {
+    $(".navbar-brand").html(
+      `<img src="./images/logo.png" alt="" style="width: 25vw; height: 13vh" />`
+    );
+  }
+}
+
 let map;
 
 $(document).ready(function () {
+  adjustLayout();
+  var user = localStorage.getItem("email");
+  if (user) $(".auth").html("Logout");
+  else $(".auth").html("Login");
+
+  $(".auth").click(function (e) {
+    e.preventDefault();
+    if ($(".auth").html() == "Login") {
+      window.location.href = "login.html";
+    } else {
+      window.location.href = "login.html";
+      localStorage.removeItem("email");
+      localStorage.removeItem("name");
+    }
+  });
+  $(window).resize(function () {
+    adjustLayout();
+  });
   map = L.map("map").setView([20.2976, 85.8173], 12);
 
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {

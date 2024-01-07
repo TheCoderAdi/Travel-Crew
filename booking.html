@@ -22,13 +22,26 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
   />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      var username = localStorage.getItem("name");
+      var email = localStorage.getItem("email");
+      console.log({username,email})
+      if(username != null){
+        $("#username").val(username);
+      }
+      if(email != null){
+        $("#email").val(email);
+      }
+    })
+  </script>
   </head>
 
-  <body class="bg-light">
+  <body style="background-color: #FCFCFF;">
 
     <div class="container">
       <div class="text-center">
-        <img class="d-block mx-auto rounded-circle" src="./images/logo.png" alt="" >
+        <img class="d-block mx-auto rounded-circle" src="./images/logo.gif" alt="" >
         <h2 class="mb-4">Booking</h2>
       </div>
 
@@ -36,21 +49,6 @@
         <div class="col-md-12">
           <form class="needs-validation" novalidate>
             <div class="row">
-              <div class="col-md-6 mb-3">
-                <label class="fs-6 fw-bolder" for="firstName">First name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid first name is required.
-                </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label class="fs-6 fw-bolder" for="lastName">Last name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid last name is required.
-                </div>
-              </div>
-            </div>
 
             <div class="mb-3">
               <label class="fs-6 fw-bolder" for="username">Username</label>
@@ -179,7 +177,7 @@
       </div>
 
       <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="mb-1">&copy; 2017-2018 Company Name</p>
+        <p class="mb-1">&copy; 2024 Travel Crew</p>
         <ul class="list-inline">
           <li class="list-inline-item"><a href="#">Privacy</a></li>
           <li class="list-inline-item"><a href="#">Terms</a></li>

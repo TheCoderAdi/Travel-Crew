@@ -23,6 +23,13 @@ function adjustLayout() {
   } else {
     $(".md-2-class").removeClass("col-md-4").addClass("col-md-2");
   }
+  if (width <= 900) {
+    $(".navbar-brand").html("Travel Crew");
+  } else {
+    $(".navbar-brand").html(
+      `<img src="./images/logo.png" alt="" style="width: 25vw; height: 13vh" />`
+    );
+  }
 }
 
 function checkHeight() {
@@ -38,6 +45,20 @@ $(document).ready(function () {
   $(".navbar-brand").hide();
   $(".plane").css("animation", "udanta-plane 3s linear");
 
+  var user = localStorage.getItem("email");
+  if (user) $(".auth").html("Logout");
+  else $(".auth").html("Login");
+
+  $(".auth").click(function (e) {
+    e.preventDefault();
+    if ($(".auth").html() == "Login") {
+      window.location.href = "login.html";
+    } else {
+      window.location.href = "login.html";
+      localStorage.removeItem("email");
+      localStorage.removeItem("name");
+    }
+  });
   setTimeout(() => {
     $(".navbar-brand").show();
   }, 1600);
