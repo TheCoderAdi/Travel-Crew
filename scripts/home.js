@@ -47,15 +47,21 @@ function showPlane() {
     $(".navbar-brand").show();
   }, 1600);
   setTimeout(() => {
-    $(".plane").hide();
-  }, 1800);
+    $(".plane").hide("fast");
+  }, 1300);
 }
 
 $(document).ready(function () {
   var width = $(window).width();
 
-  $(".plane").css("animation", "udanta-plane 3s linear");
-
+  // $(".plane").css("animation", "udanta-plane 3s linear");
+  $(".plane").animate(
+    {
+      top: "-=200px",
+      left: "-=1100px",
+    },
+    2000
+  );
   var user = localStorage.getItem("email");
   if (user) $(".auth").html("Logout");
   else $(".auth").html("Login");
