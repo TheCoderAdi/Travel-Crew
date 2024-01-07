@@ -4,7 +4,7 @@ function adjustLayout() {
     $(".navbar-brand").html("Travel Crew");
   } else {
     $(".navbar-brand").html(
-      `<img src="./images/logo.png" alt="" style="width: 25vw; height: 13vh" />`
+      `<img src="./images/logo.png" alt="logo" style="width: 17vw; height: 9vh" />`
     );
   }
 }

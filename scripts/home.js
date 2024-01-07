@@ -27,7 +27,7 @@ function adjustLayout() {
     $(".navbar-brand").html("Travel Crew");
   } else {
     $(".navbar-brand").html(
-      `<img src="./images/logo.png" alt="" style="width: 25vw; height: 13vh" />`
+      `<img src="./images/logo.png" alt="logo" style="width: 17vw; height: 9vh" />`
     );
   }
 }
@@ -41,8 +41,19 @@ function checkHeight() {
   }
 }
 
-$(document).ready(function () {
+function showPlane() {
   $(".navbar-brand").hide();
+  setTimeout(() => {
+    $(".navbar-brand").show();
+  }, 1600);
+  setTimeout(() => {
+    $(".plane").hide();
+  }, 1800);
+}
+
+$(document).ready(function () {
+  var width = $(window).width();
+
   $(".plane").css("animation", "udanta-plane 3s linear");
 
   var user = localStorage.getItem("email");
@@ -59,12 +70,6 @@ $(document).ready(function () {
       localStorage.removeItem("name");
     }
   });
-  setTimeout(() => {
-    $(".navbar-brand").show();
-  }, 1600);
-  setTimeout(() => {
-    $(".plane").hide();
-  }, 1800);
 
   adjustLayout();
   checkHeight();
@@ -77,4 +82,11 @@ $(document).ready(function () {
   $(".scroll-to-top").click(function () {
     $("html, body").scrollTop(0);
   });
+
+  if (width >= 900) {
+    $(".plane").show();
+    showPlane();
+  } else {
+    $(".plane").hide();
+  }
 });
