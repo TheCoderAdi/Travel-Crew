@@ -4,15 +4,17 @@ li {
   text-decoration: none;
   list-style: none;
 }
-.navbar-brand {
-  transition: all 0.5s ease;
-}
 .plane {
   height: 268px;
   width: 260px;
   left: 47%;
-  top: -6%;
+  top: -1%;
   transform: rotateZ(5deg);
+}
+.navbar-toggler {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 @keyframes udanta-plane {
   0% {
